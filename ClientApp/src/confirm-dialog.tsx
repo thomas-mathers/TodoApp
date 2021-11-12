@@ -1,4 +1,4 @@
-﻿import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Slide } from "@mui/material";
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Slide } from "@mui/material";
 import { forwardRef } from "react";
 import { ConfirmDialogProps } from "./confirm-dialog-props";
 

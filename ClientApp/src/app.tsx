@@ -28,11 +28,11 @@ const App = (props: any) => {
     }
 
     const updateTask = (task: TaskViewModel, index: number) => {
-        setTasks(tasks.map((v, i) => i == index ? task : v));
+        setTasks(tasks.map((v, i) => i === index ? task : v));
     }
 
     const deleteTask = (index: number) => {
-        setTasks(tasks.filter((v, i) => i != index));
+        setTasks(tasks.filter((v, i) => i !== index));
     }
 
     const deleteTasks = () => {

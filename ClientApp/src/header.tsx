@@ -1,5 +1,5 @@
-﻿import { Add, DarkMode, Delete, LightMode } from "@mui/icons-material";
-import { AppBar, Box, Hidden, IconButton, Stack, TextField, Tooltip, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Add, DarkMode, Delete, LightMode } from "@mui/icons-material";
+import { AppBar, Box, Hidden, IconButton, Stack, TextField, Tooltip, Typography } from "@mui/material";
 import { ChangeEvent, useState, Fragment } from "react";
 import { HeaderProps } from "./header-props";
 import { useDialog } from "./hooks/use-dialog";
@@ -48,12 +48,12 @@ const Header = (props: HeaderProps) => {
                             hiddenLabel/>
                     </Box>
                     <Tooltip title="Insert new task">
-                        <IconButton size="small" color="primary" disabled={description.length == 0} onClick={handleClickInsert}>
+                        <IconButton size="small" color="primary" disabled={description.length === 0} onClick={handleClickInsert}>
                             <Add />
                         </IconButton>
                     </Tooltip>
                     <Tooltip title="Delete all tasks">
-                        <IconButton size="small" disabled={props.tasks.length == 0} onClick={handleClickDelete}>
+                        <IconButton size="small" disabled={props.tasks.length === 0} onClick={handleClickDelete}>
                             <Delete />
                         </IconButton>
                     </Tooltip>

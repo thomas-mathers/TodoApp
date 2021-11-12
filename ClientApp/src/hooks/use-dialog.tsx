@@ -1,4 +1,4 @@
-﻿import { useContext } from 'react'
+import { useContext } from 'react'
 import { DialogContext } from '../dialog-context'
 
 export const useDialog = () => {

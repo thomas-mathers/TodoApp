@@ -1,4 +1,4 @@
-﻿import AutoSizer from 'react-virtualized-auto-sizer';
+import AutoSizer from 'react-virtualized-auto-sizer';
 import { FixedSizeList as List } from 'react-window';
 import { TaskListItem } from "./task-list-item";
 import { TaskListProps } from './task-list-props';

@@ -1,4 +1,4 @@
-﻿import { useState } from "react"
+import { useState } from "react"
 import { ConfirmDialog } from "./confirm-dialog"
 import { DialogContext, IDialogContext, IDialogOptions } from "./dialog-context";
 
