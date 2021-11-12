@@ -65,7 +65,7 @@ const TaskListItem = (props: TaskListItemProps) => {
                             task.editing ?
                                 <Fragment>
                                     <Tooltip title="Done">
-                                        <IconButton onClick={handleConfirmEdit}>
+                                        <IconButton disabled={description.length === 0} onClick={handleConfirmEdit}>
                                             <Done />
                                         </IconButton>
                                     </Tooltip>
